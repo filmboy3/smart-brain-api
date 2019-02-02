@@ -9,6 +9,7 @@ services:
     working_dir: /usr/src/smart-brain-api
     environment:
       env_API_KEY: ${API_KEY}
+      env_JWT_SECRET: ${JWT_SECRET}
       POSTGRES_URI: postgres://admin:password@postgres:5432/smart-brain
     links:
       - postgres
